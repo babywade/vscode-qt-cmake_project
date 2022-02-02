@@ -41,6 +41,8 @@ else()
     main.cpp
     mainwindow.cpp
     mainwindow.h
+    newspaper.h
+    reader.h
     mainwindow.ui
     ${TS_FILES}
   )
