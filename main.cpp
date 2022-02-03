@@ -9,10 +9,10 @@
 
 int main(int argc, char *argv[])
 {
-    // QApplication a(argc, argv);
+    QApplication a(argc, argv);
     // mainwindow
-    // MainWindow w;
-    // w.show();
+    MainWindow w;
+    w.show();
 
     // label测试
     // QLabel label("Hello, world"); // 调用构造函数，java写法
@@ -26,13 +26,15 @@ int main(int argc, char *argv[])
     // button.show();
 
     // 观察者模式测试 newspaper.h reader.h
-    QCoreApplication app(argc, argv);
-    Newspaper newspaper("Newspaper A");
-    Reader reader;
-    QObject::connect(&newspaper, &Newspaper::newPaper,
-                     &reader,    &Reader::receiveNewspaper);
-    newspaper.send();
-    return app.exec();
+    // QCoreApplication app(argc, argv);
+    // Newspaper newspaper("Newspaper A");
+    // Reader reader;
+    // QObject::connect(&newspaper, &Newspaper::newPaper,
+    //                  &reader,    &Reader::receiveNewspaper);
+    // newspaper.send();
+    // return app.exec();
 
-    // return a.exec();
+    return a.exec();
+
+
 }
