@@ -19,3 +19,7 @@ qt version: qt5.14.2
 程序修改后，F7重新构建项目，F5运行。
 
 添加注释后的C2065错误：定位是vscode编辑器换行符设置错误，windows应为CRLF
+
+效果样例：
+
+![example.png](image/README/example.png)
